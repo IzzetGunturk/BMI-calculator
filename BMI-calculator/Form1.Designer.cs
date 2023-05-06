@@ -38,11 +38,13 @@ namespace BMI_calculator
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelBmiResult = new System.Windows.Forms.Label();
+            this.labelBmiMeaning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonCalculator
             // 
-            this.buttonCalculator.Location = new System.Drawing.Point(330, 320);
+            this.buttonCalculator.Location = new System.Drawing.Point(345, 292);
             this.buttonCalculator.Name = "buttonCalculator";
             this.buttonCalculator.Size = new System.Drawing.Size(110, 23);
             this.buttonCalculator.TabIndex = 0;
@@ -52,14 +54,14 @@ namespace BMI_calculator
             // 
             // tBLength
             // 
-            this.tBLength.Location = new System.Drawing.Point(154, 208);
+            this.tBLength.Location = new System.Drawing.Point(212, 209);
             this.tBLength.Name = "tBLength";
             this.tBLength.Size = new System.Drawing.Size(100, 22);
             this.tBLength.TabIndex = 1;
             // 
             // tBWeight
             // 
-            this.tBWeight.Location = new System.Drawing.Point(330, 208);
+            this.tBWeight.Location = new System.Drawing.Point(355, 209);
             this.tBWeight.Name = "tBWeight";
             this.tBWeight.Size = new System.Drawing.Size(100, 22);
             this.tBWeight.TabIndex = 2;
@@ -67,7 +69,7 @@ namespace BMI_calculator
             // rBAge
             // 
             this.rBAge.AutoSize = true;
-            this.rBAge.Location = new System.Drawing.Point(516, 208);
+            this.rBAge.Location = new System.Drawing.Point(520, 209);
             this.rBAge.Name = "rBAge";
             this.rBAge.Size = new System.Drawing.Size(66, 21);
             this.rBAge.TabIndex = 3;
@@ -78,7 +80,7 @@ namespace BMI_calculator
             // rBAge2
             // 
             this.rBAge2.AutoSize = true;
-            this.rBAge2.Location = new System.Drawing.Point(516, 235);
+            this.rBAge2.Location = new System.Drawing.Point(520, 236);
             this.rBAge2.Name = "rBAge2";
             this.rBAge2.Size = new System.Drawing.Size(53, 21);
             this.rBAge2.TabIndex = 4;
@@ -89,7 +91,7 @@ namespace BMI_calculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(151, 177);
+            this.label1.Location = new System.Drawing.Point(209, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 5;
@@ -98,7 +100,7 @@ namespace BMI_calculator
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(327, 177);
+            this.label2.Location = new System.Drawing.Point(353, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 17);
             this.label2.TabIndex = 6;
@@ -107,7 +109,7 @@ namespace BMI_calculator
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(513, 177);
+            this.label3.Location = new System.Drawing.Point(517, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 17);
             this.label3.TabIndex = 7;
@@ -123,11 +125,31 @@ namespace BMI_calculator
             this.label4.TabIndex = 8;
             this.label4.Text = "BMI-calculator";
             // 
+            // labelBmiResult
+            // 
+            this.labelBmiResult.AutoSize = true;
+            this.labelBmiResult.Location = new System.Drawing.Point(228, 359);
+            this.labelBmiResult.Name = "labelBmiResult";
+            this.labelBmiResult.Size = new System.Drawing.Size(74, 17);
+            this.labelBmiResult.TabIndex = 12;
+            this.labelBmiResult.Text = "BMI result:";
+            // 
+            // labelBmiMeaning
+            // 
+            this.labelBmiMeaning.AutoSize = true;
+            this.labelBmiMeaning.Location = new System.Drawing.Point(228, 392);
+            this.labelBmiMeaning.Name = "labelBmiMeaning";
+            this.labelBmiMeaning.Size = new System.Drawing.Size(66, 17);
+            this.labelBmiMeaning.TabIndex = 13;
+            this.labelBmiMeaning.Text = "Meaning:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelBmiMeaning);
+            this.Controls.Add(this.labelBmiResult);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -155,6 +177,8 @@ namespace BMI_calculator
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelBmiResult;
+        private System.Windows.Forms.Label labelBmiMeaning;
     }
 }
 

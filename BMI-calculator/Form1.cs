@@ -19,13 +19,53 @@ namespace BMI_calculator
 
         private void buttonCalculator_Click(object sender, EventArgs e)
         {
-            double length = Convert.ToDouble(tBLength.Text);
-            string lengthstring = Convert.ToString(length);
-            MessageBox.Show(lengthstring);
-            //double weight = Convert.ToDouble(tBWeight.Text);
+            double lengthInCm = Convert.ToDouble(tBLength.Text);
+            double lengthInM = lengthInCm / 100; // 100cm = 1m
+            double weight = Convert.ToDouble(tBWeight.Text);
+
+            double resultBmi = weight / (lengthInM * lengthInM);
+            string resultMessage = resultBmi.ToString("F2");
+            labelBmiResult.Text = "BMI result:" + " " + resultMessage;
 
 
+            if (rBAge.Checked)
+            {
+                if (resultBmi < 18.5) {
+                    labelBmiMeaning.Text = "Underweight";
+                }
+                else if (resultBmi < 25)
+                {
+                    labelBmiMeaning.Text = "Healthy weight";
+                }
+                else if (resultBmi < 30)
+                {
+                    labelBmiMeaning.Text = "Overweight";
+                }
+                else
+                {
+                    labelBmiMeaning.Text = "Obesity";
+                }
+            }
 
+            if (rBAge2.Checked)
+            {
+                if (resultBmi < 22)
+                {
+                    labelBmiMeaning.Text = "Underweight";
+                }
+                else if (resultBmi < 28)
+                {
+                    labelBmiMeaning.Text = "Healthy weight";
+                }
+                else if (resultBmi < 30)
+                {
+                    labelBmiMeaning.Text = "Overweight";
+                }
+                else
+                {
+                    labelBmiMeaning.Text = "Obesity";
+                }
+            }
 
         }
     }
