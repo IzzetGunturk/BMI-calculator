@@ -1,6 +1,6 @@
 # 🖩 BMI-calculator
 
-I programmed a BMI-calculator application
+I programmed a BMI-calculator application.
 
 ## 🛠️ Technologies
 
