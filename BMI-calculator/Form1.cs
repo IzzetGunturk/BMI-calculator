@@ -31,19 +31,19 @@ namespace BMI_calculator
             if (rBAge.Checked)
             {
                 if (resultBmi < 18.5) {
-                    labelBmiMeaning.Text = "Underweight";
+                    labelBmiMeaning.Text = "Meaning: Underweight";
                 }
                 else if (resultBmi < 25)
                 {
-                    labelBmiMeaning.Text = "Healthy weight";
+                    labelBmiMeaning.Text = "Meaning: Healthy weight";
                 }
                 else if (resultBmi < 30)
                 {
-                    labelBmiMeaning.Text = "Overweight";
+                    labelBmiMeaning.Text = "Meaning: Overweight";
                 }
                 else
                 {
-                    labelBmiMeaning.Text = "Obesity";
+                    labelBmiMeaning.Text = "Meaning: Obesity";
                 }
             }
 
@@ -51,19 +51,19 @@ namespace BMI_calculator
             {
                 if (resultBmi < 22)
                 {
-                    labelBmiMeaning.Text = "Underweight";
+                    labelBmiMeaning.Text = "Meaning: Underweight";
                 }
                 else if (resultBmi < 28)
                 {
-                    labelBmiMeaning.Text = "Healthy weight";
+                    labelBmiMeaning.Text = "Meaning: Healthy weight";
                 }
                 else if (resultBmi < 30)
                 {
-                    labelBmiMeaning.Text = "Overweight";
+                    labelBmiMeaning.Text = "Meaning: Overweight";
                 }
                 else
                 {
-                    labelBmiMeaning.Text = "Obesity";
+                    labelBmiMeaning.Text = "Meaning: Obesity";
                 }
             }
 
